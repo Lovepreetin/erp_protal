@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background-color: #2B303A;
+  color: white;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+.profile {
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile img {
+  width: 150px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.student-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.student-roll {
+  font-size: 14px;
+  margin: 5px 0 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #2B303A;
+}
+.sidebar li a {
+  color: inherit;              /* Keeps the same white color */
+  text-decoration: none;       /* Removes underline */
+  display: block;
+
+}
+
+.sidebar li a:hover {
+  background-color: #003366;   /* Same hover effect as other items */
+  color: inherit;              /* Prevents color shift */
+}
+
+
+/* Top Bar */
+.top-bar {
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 220px;
+  right: 0;
+  height: 60px;
+  background-color: #2B303A;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 3;
+}
+
+.user-info span {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.logout {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Dashboard */
+.dashboard {
+  height: 150px;
+  width: calc(100% - 170px);
+  margin-left: 240px;
+  margin-top: 80px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+.tile.fee {
+  background-color: #F56954;
+  color:#FFFFFF /* Blue */
+}
+
+.tile.hostel {
+  background-color: #BA79CB;
+  color:#FFFFFF /* Green */
+}
+
+.tile.subjects {
+  background-color: #00A65A;
+  color:#FFFFFF /* Teal */
+}
+
+.tile.request {
+  background-color: #FFA812;
+  color :#FFFFFF; /* Amber */
+  
+}
+
+.tile.bus {
+  background-color: #00C0EF; 
+  color:#FFFFFF
+}
+
+.tile.attendance {
+  background-color: #EC3B83;
+  color:#FFFFFF /* Red */
+}
+
+.tile {
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.tile:hover {
+  transform: scale(1.03);
+}
+
+.tile small {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+.naac-logo {
+  float: right;
+  margin-right: 5px;
+  display: block;
+  margin: 20px auto;
+  max-width: 1300px;
+  height: auto;
+}
+
+/* Footer */

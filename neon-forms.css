@@ -1,0 +1,136 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background-color: #2B303A;
+  color: white;
+  overflow-y: auto;
+  z-index: 2;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #2B303A;
+}
+
+.profile {
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile img {
+  width: 150px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.top-bar {
+  background-color: #003366;
+  color: white;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content {
+  padding: 30px;
+  margin-left: 240px; /* Push content to the right of sidebar */
+  margin-top: 80px;   /* Optional: if you have a top bar */
+}
+
+
+.table-section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+table {
+  float:right;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #F2994B;
+  color: white;
+}
+
+td a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid;
+}
+
+.status.success {
+  background-color: #00A651;
+  color: #FFFFFF;
+  border-color: #c3e6cb;
+}
+
+.fee{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.receipt{
+    font-family: Arial, Helvetica, sans-serif;
+}
