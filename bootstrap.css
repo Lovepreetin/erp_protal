@@ -16,6 +16,9 @@ body {
   overflow-y: auto;
   z-index: 2;
 }
+.roll-number{
+  color: #FFFFFF;
+}
 
 .profile {
   text-align: center;
@@ -169,3 +172,4 @@ body {
 }
 
 /* Footer */
+
